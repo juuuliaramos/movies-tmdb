@@ -6,12 +6,15 @@ export const HeaderWrapper = styled.div`
 	width: 100%;
 	height: 56px;
 	background-color: #5c16c5;
+
+	position: fixed;
+	top: 0;
 `;
 
 export const HeaderContent = styled.div`
 	width: 100%;
-	max-width: 1260px;
-	height: 56px;
+	max-width: 1280px;
+	height: 100%;
 	margin: 0 auto;
 `;
 
