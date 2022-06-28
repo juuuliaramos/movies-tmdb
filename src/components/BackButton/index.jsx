@@ -7,7 +7,6 @@ function BackButton() {
 
 	function HandleClickedButton() {
 		navigate('/');
-		console.log('chegou');
 	}
 
 	return (
