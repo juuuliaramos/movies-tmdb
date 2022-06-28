@@ -7,8 +7,8 @@ function Header() {
 		<HeaderWrapper data-testid='headerWrapper'>
 			<HeaderContent data-testid='headerContent'>
 				<Image src={headerImage} data-testid='image' />
+				<SearchField />
 			</HeaderContent>
-			<SearchField />
 		</HeaderWrapper>
 	);
 }

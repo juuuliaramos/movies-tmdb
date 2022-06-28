@@ -14,19 +14,25 @@ export const Wrapper = styled.div`
 export const Highlight = styled.div`
 	max-width: 1282px;
 	width: 100%;
-	height: 300px;
+	height: 220px;
 	margin: 0 auto;
+	padding-bottom: 20px;
 	border-radius: 8px;
 	background-color: #2d0c5e;
 
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: flex-end;
 	align-items: center;
 
 	@media screen and (${devices.mobile}) {
-		height: fit-content;
+		height: 270px;
 		padding: 36px 0;
+	}
+
+	@media screen and (${devices.tablet}) {
+		height: 270px;
+		padding: 0;
 	}
 `;
 
@@ -42,13 +48,13 @@ export const Title = styled.p`
 	line-height: 56px;
 
 	@media screen and (${devices.tablet}) {
-		max-width: calc(100% - 32px);
+		max-width: 80%;
 		margin: 40px auto 36px;
 		font-size: 36px;
 	}
 
 	@media screen and (${devices.mobile}) {
-		max-width: calc(100% - 26px);
+		max-width: 80%;
 		font-size: 24px;
 		line-height: 28px;
 	}

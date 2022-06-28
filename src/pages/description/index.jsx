@@ -5,6 +5,7 @@ import BackButton from '../../components/BackButton';
 import TagGender from '../../components/TagGenre';
 import {
 	HighlightDescription,
+	HighlightText,
 	Wrapper,
 	DescriptionContainer,
 	Image,
@@ -18,7 +19,9 @@ function Description() {
 		<Wrapper>
 			<HighlightDescription>
 				<BackButton />
+				<HighlightText>{choosedMovie.title}</HighlightText>
 			</HighlightDescription>
+
 			<DescriptionContainer>
 				<Image
 					src={`https://image.tmdb.org/t/p/w500${choosedMovie.poster_path}`}

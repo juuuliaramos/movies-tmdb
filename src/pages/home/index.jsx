@@ -44,9 +44,7 @@ function Home() {
 	return (
 		<Wrapper>
 			<Highlight>
-				<Title>
-					Milhões de filmes, séries e pessoas para descobrir. Explore já.
-				</Title>
+				<Title>Milhões de filmes, séries e pessoas para descobrir.</Title>
 			</Highlight>
 
 			<Body>

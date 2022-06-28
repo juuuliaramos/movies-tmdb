@@ -12,8 +12,8 @@ import Footer from './components/Footer';
 function App() {
 	return (
 		<ChoosedMovieContextProvider>
+			<Header />
 			<Router>
-				<Header />
 				<Routes>
 					<Route exact path='/' element={<Home />} />
 					<Route path='/description/:id' element={<Description />} />

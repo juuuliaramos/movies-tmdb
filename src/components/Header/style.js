@@ -11,29 +11,33 @@ export const HeaderWrapper = styled.div`
 	position: fixed;
 	top: 0;
 
-	display: flex;
+	@media screen and (${devices.mobile}) {
+		height: 120px;
+	}
 `;
 
 export const HeaderContent = styled.div`
-	width: 250px;
+	width: 100%;
 	max-width: 1280px;
 	height: 100%;
 	margin: 0 auto;
 
 	display: flex;
+
+	@media screen and (${devices.mobile}) {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
 `;
 
 export const Image = styled.img`
-	width: fit-content;
+	width: 250px;
 	height: 24px;
 	margin: 16px 16px 15px 16px;
 
-	position: fixed;
-	left: 0;
-
 	@media screen and (${devices.mobile}) {
 		width: 100%;
-		height: 18px;
-		margin: 19px auto 18px;
+		height: 20px;
 	}
 `;

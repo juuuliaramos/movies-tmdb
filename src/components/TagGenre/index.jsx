@@ -6,19 +6,19 @@ function TagGender({ value }) {
 	value.forEach((val) => {
 		switch (val) {
 			case 28: {
-				moviesGenre += 'Action ';
+				moviesGenre += 'Ação ';
 				return;
 			}
 			case 12: {
-				moviesGenre += 'Adventure ';
+				moviesGenre += 'Aventura ';
 				return;
 			}
 			case 16: {
-				moviesGenre += 'Animation ';
+				moviesGenre += 'Animação ';
 				return;
 			}
 			case 35: {
-				moviesGenre += 'Comedy ';
+				moviesGenre += 'Comédia ';
 				return;
 			}
 			case 80: {
@@ -26,7 +26,7 @@ function TagGender({ value }) {
 				return;
 			}
 			case 99: {
-				moviesGenre += 'Documentary ';
+				moviesGenre += 'Documentário ';
 				return;
 			}
 			case 18: {
@@ -34,27 +34,27 @@ function TagGender({ value }) {
 				return;
 			}
 			case 10751: {
-				moviesGenre += 'Family ';
+				moviesGenre += 'Família';
 				return;
 			}
 			case 14: {
-				moviesGenre += 'Fantasy ';
+				moviesGenre += 'Fantasia ';
 				return;
 			}
 			case 36: {
-				moviesGenre += 'History ';
+				moviesGenre += 'História ';
 				return;
 			}
 			case 27: {
-				moviesGenre += 'Horror ';
+				moviesGenre += 'Terror ';
 				return;
 			}
 			case 10402: {
-				moviesGenre += 'Music ';
+				moviesGenre += 'Música ';
 				return;
 			}
 			case 9648: {
-				moviesGenre += 'Mystery ';
+				moviesGenre += 'Mistério ';
 				return;
 			}
 			case 10749: {
@@ -62,7 +62,7 @@ function TagGender({ value }) {
 				return;
 			}
 			case 878: {
-				moviesGenre += 'Science/Fiction ';
+				moviesGenre += 'Ficção ';
 				return;
 			}
 			case 10770: {
@@ -74,11 +74,11 @@ function TagGender({ value }) {
 				return;
 			}
 			case 10752: {
-				moviesGenre += 'War ';
+				moviesGenre += 'Guerra ';
 				return;
 			}
 			case 37: {
-				moviesGenre += 'Western ';
+				moviesGenre += 'Faroeste ';
 				return;
 			}
 
@@ -88,7 +88,7 @@ function TagGender({ value }) {
 		}
 	});
 
-	return <TagContainer>{moviesGenre}</TagContainer>;
+	return <TagContainer>Gêneros: {moviesGenre}</TagContainer>;
 }
 
 export default TagGender;
