@@ -1,4 +1,3 @@
-// import { useParams } from 'react-router-dom';
 import { useContext } from 'react';
 
 import { ChoosedMovieContext } from '../../contexts/choosedMovie';
@@ -14,8 +13,6 @@ import {
 
 function Description() {
 	const { choosedMovie } = useContext(ChoosedMovieContext);
-
-	// console.log(choosedMovie);
 
 	return (
 		<Wrapper>
