@@ -1,7 +1,9 @@
 import Axios from 'axios';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 
+import { ChoosedMovieContext } from '../../contexts/choosedMovie';
+import Footer from '../../components/Footer';
 import {
 	Wrapper,
 	Highlight,
@@ -16,8 +18,9 @@ import {
 } from './style';
 
 function Home() {
-	let navigate = useNavigate();
+	const { setChoosedMovie } = useContext(ChoosedMovieContext);
 
+	let navigate = useNavigate();
 	const [moviesData, setMoviesData] = useState();
 
 	const baseURL =
@@ -35,7 +38,7 @@ function Home() {
 
 	function HandleClickedCard(element) {
 		navigate(`/description/${element.title}`);
-		console.log(element);
+		setChoosedMovie(element);
 	}
 
 	return (
@@ -64,6 +67,7 @@ function Home() {
 
 				<Pagination>1 2 3 4 5 </Pagination>
 			</Body>
+			<Footer />
 		</Wrapper>
 	);
 }

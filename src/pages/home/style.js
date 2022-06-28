@@ -6,11 +6,12 @@ export const Wrapper = styled.div`
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
+	background-color: #dedbe6;
 `;
 
 export const Highlight = styled.div`
 	width: 100%;
-	height: 200px;
+	height: 300px;
 	margin: 0 auto;
 	background-color: #2d0c5e;
 
@@ -52,7 +53,7 @@ export const Title = styled.p`
 export const Body = styled.div`
 	width: calc(100% - 32px);
 	max-width: 1260px;
-	margin: 0 auto;
+	margin: 0 auto 50px;
 
 	display: flex;
 	flex-direction: column;
@@ -126,7 +127,7 @@ export const MovieDate = styled.p`
 export const Pagination = styled.p`
 	width: fit-content;
 	height: fit-content;
-	margin: 0 auto;
+	margin: 40px auto 0;
 	color: #646464;
 	font: 14px Roboto, sans-serif;
 	font-weight: 700;
