@@ -59,7 +59,6 @@ function Home() {
 									alt='ola'
 								/>
 								<MovieTitle>{element.title}</MovieTitle>
-								<MovieDate>{element.release_date}</MovieDate>
 							</MovieCard>
 						);
 					})}

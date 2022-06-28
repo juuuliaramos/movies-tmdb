@@ -2,6 +2,17 @@ import styled from 'styled-components';
 
 import { devices } from '../../utils/breakpoints';
 
+export const Wrapper = styled.div`
+	width: 100vw;
+	height: 100%;
+	margin: 50px auto 0;
+
+	@media screen and (${devices.tablet}) {
+		max-width: 100%;
+		/* margin: 0 0 20px 0; */
+	}
+`;
+
 export const HighlightDescription = styled.div`
 	max-width: 1280px;
 	height: fit-content;
@@ -12,16 +23,10 @@ export const HighlightDescription = styled.div`
 	box-shadow: 0px 8px 20px -3px rgba(0, 0, 0, 0.7);
 
 	@media screen and (${devices.tablet}) {
-		width: 100%;
+		max-width: calc(100% - 80px);
 		height: 100%;
-		margin: 0 0 20px 0;
+		margin: 0 auto 20px;
 	}
-`;
-
-export const Wrapper = styled.div`
-	max-width: 1280px;
-	height: 100%;
-	margin: 50px auto 0;
 `;
 
 export const DescriptionContainer = styled.div`
@@ -33,7 +38,7 @@ export const DescriptionContainer = styled.div`
 	display: flex;
 
 	@media screen and (${devices.tablet}) {
-		width: 100%;
+		max-width: calc(100% - 40px);
 
 		flex-direction: column;
 	}
@@ -51,19 +56,20 @@ export const Image = styled.img`
 `;
 
 export const DescriptionText = styled.div`
-	max-width: 800px;
+	max-width: 100%;
 	height: fit-content;
 	margin-left: 20px;
 	padding: 20px 30px;
 	border-radius: 16px;
 	border: 2px solid gray;
-	background-color: #4b5358;
+	background-color: blueviolet;
 	font: 16px Roboto, sans-serif;
 	color: #ffffff;
 	line-height: 23px;
 	box-shadow: 0px 8px 20px -3px rgba(0, 0, 0, 0.7);
 
 	@media screen and (${devices.tablet}) {
+		max-width: calc(100% - 60px);
 		margin: 0 auto 120px;
 	}
 

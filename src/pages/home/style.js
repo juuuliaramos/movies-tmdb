@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import { devices } from '../../utils/breakpoints';
 
 export const Wrapper = styled.div`
+	width: 100%;
+	height: 100%;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
@@ -10,9 +12,11 @@ export const Wrapper = styled.div`
 `;
 
 export const Highlight = styled.div`
+	max-width: 1282px;
 	width: 100%;
 	height: 300px;
 	margin: 0 auto;
+	border-radius: 8px;
 	background-color: #2d0c5e;
 
 	display: flex;
@@ -22,7 +26,7 @@ export const Highlight = styled.div`
 
 	@media screen and (${devices.mobile}) {
 		height: fit-content;
-		padding-bottom: 36px;
+		padding: 36px 0;
 	}
 `;
 
@@ -51,8 +55,8 @@ export const Title = styled.p`
 `;
 
 export const Body = styled.div`
-	width: calc(100% - 32px);
-	max-width: 1260px;
+	width: 80%;
+	max-width: 1280px;
 	margin: 0 auto 50px;
 
 	display: flex;
@@ -62,7 +66,7 @@ export const Body = styled.div`
 `;
 
 export const MoviesSection = styled.div`
-	width: fit-content;
+	width: 100%;
 	height: fit-content;
 	margin: 29px auto 0;
 
