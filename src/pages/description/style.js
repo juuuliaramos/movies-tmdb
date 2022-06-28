@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-// import { devices } from '../../utils/breakpoints';
+import { devices } from '../../utils/breakpoints';
 
 export const HighlightDescription = styled.div`
 	max-width: 1280px;
@@ -10,6 +10,12 @@ export const HighlightDescription = styled.div`
 	border-radius: 8px;
 	background-color: #2d0c5e;
 	box-shadow: 0px 8px 20px -3px rgba(0, 0, 0, 0.7);
+
+	@media screen and (${devices.tablet}) {
+		width: 100%;
+		height: 100%;
+		margin: 0 0 20px 0;
+	}
 `;
 
 export const Wrapper = styled.div`
@@ -25,6 +31,12 @@ export const DescriptionContainer = styled.div`
 	margin: 0 auto;
 
 	display: flex;
+
+	@media screen and (${devices.tablet}) {
+		width: 100%;
+
+		flex-direction: column;
+	}
 `;
 
 export const Image = styled.img`
@@ -32,6 +44,10 @@ export const Image = styled.img`
 	max-height: 450px;
 	border-radius: 16px;
 	box-shadow: 0px 8px 20px -3px rgba(0, 0, 0, 0.7);
+
+	@media screen and (${devices.tablet}) {
+		margin: 0 auto 20px;
+	}
 `;
 
 export const DescriptionText = styled.div`
@@ -46,6 +62,10 @@ export const DescriptionText = styled.div`
 	color: #ffffff;
 	line-height: 23px;
 	box-shadow: 0px 8px 20px -3px rgba(0, 0, 0, 0.7);
+
+	@media screen and (${devices.tablet}) {
+		margin: 0 auto 120px;
+	}
 
 	p {
 		margin-bottom: 8px;

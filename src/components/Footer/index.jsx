@@ -2,7 +2,7 @@ import { FooterWrapper, Content, Icon } from './style';
 
 function Footer() {
 	return (
-		<FooterWrapper data-testid='headerWrapper'>
+		<FooterWrapper data-testid='footerWrapper'>
 			<Content href='https://www.linkedin.com/in/juliasperandio/'>
 				<Icon />
 			</Content>

@@ -3,7 +3,7 @@ import { useEffect, useState, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 import { ChoosedMovieContext } from '../../contexts/choosedMovie';
-import Footer from '../../components/Footer';
+
 import {
 	Wrapper,
 	Highlight,
@@ -67,7 +67,6 @@ function Home() {
 
 				<Pagination>1 2 3 4 5 </Pagination>
 			</Body>
-			<Footer />
 		</Wrapper>
 	);
 }

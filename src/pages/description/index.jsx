@@ -15,7 +15,7 @@ import {
 function Description() {
 	const { choosedMovie } = useContext(ChoosedMovieContext);
 
-	console.log(choosedMovie);
+	// console.log(choosedMovie);
 
 	return (
 		<Wrapper>

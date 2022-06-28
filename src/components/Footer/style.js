@@ -1,15 +1,13 @@
 import styled from 'styled-components';
 import { TbBrandLinkedin } from 'react-icons/tb';
 
-import { devices } from '../../utils/breakpoints';
-
 export const FooterWrapper = styled.div`
 	width: 100%;
 	height: fit-content;
 	background-color: #5c16c5;
 	margin: 0 auto;
 
-	position: fixed;
+	position: static;
 	bottom: 0;
 `;
 
